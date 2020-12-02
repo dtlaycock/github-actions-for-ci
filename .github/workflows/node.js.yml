@@ -34,7 +34,7 @@ jobs:
       - uses: actions/download-artifact@master  
         with:
           name: webpack artifacts
-          path: public/
+          path: public
       - name: Uses Node.js ${{ matrix.node-version }}
         uses: actions/setup-node@v1
         with:
@@ -44,5 +44,4 @@ jobs:
           npm install
           npm test
         env: 
-          CI: true 
           CI: true
