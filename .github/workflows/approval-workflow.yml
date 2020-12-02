@@ -1,1 +1,2 @@
 name: Test approval worflow
+on: pull_request_review
