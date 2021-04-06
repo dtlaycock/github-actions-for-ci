@@ -47,7 +47,7 @@ jobs:
         env:
           CI: true
   deploy:
-    needs: test
+    needs: build
     runs-on: ubuntu-latest
     steps:
       - uses: actions/download-artifact@master
