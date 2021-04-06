@@ -23,10 +23,10 @@ jobs:
       with:
         name: tic-tac-toe
         path: |
-          ./
-          !node_modules/
-          !src/
-          !.git/
+          ./index.html
+          ./public/
+          ./package.json
+          ./package-lock.json
   test:
     needs: build
     runs-on: ubuntu-latest
